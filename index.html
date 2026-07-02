@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selvasarukesh K - Full Stack Developer Portfolio. Java, Angular, Spring Boot, and cloud-native expertise." />
+    <title>Selvasarukesh K | Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bowlby+One&family=Poppins:wght@400;500;600;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="logo">SELVASARUKESH</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#experience" class="nav-link">EXPERIENCE</a>
+                <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+        <div class="doodle doodle-spring spring-1" aria-hidden="true"></div>
+        <div class="doodle doodle-dashed dashed-1" aria-hidden="true"></div>
+        <div class="doodle doodle-star star-hero" aria-hidden="true">✦</div>
+
+        <div class="container hero-inner">
+            <div class="hero-text" data-aos="fade-right">
+                <p class="hero-hi">Hello, I'm</p>
+                <h1 class="hero-name">SELVASARUKESH</h1>
+                <h2 class="hero-role">FULL STACK DEVELOPER</h2>
+
+                <a href="#about" class="btn btn-primary">
+                    GET STARTED <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/selvasarukesh-k-59045b222/" target="_blank" rel="noopener" class="social-tile" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Selvasarukesh" target="_blank" rel="noopener" class="social-tile" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Selvasarukesh/" target="_blank" rel="noopener" class="social-tile" aria-label="LeetCode">
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-illustration" data-aos="fade-left" aria-hidden="true">
+                <!-- Floating tech badges -->
+                <div class="float-badge float-badge-java"  title="Java">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="float-badge float-badge-html"  title="HTML5">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="float-badge float-badge-git"   title="Git">
+                    <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <div class="float-badge float-badge-db"    title="Database">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="float-badge float-badge-cloud" title="Cloud">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <div class="float-badge float-badge-react" title="Docker">
+                    <i class="fa-brands fa-docker"></i>
+                </div>
+
+                <!-- Main developer illustration -->
+                <svg class="dev-illustration" viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Developer illustration">
+                    <defs>
+                        <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%"  stop-color="#0D2A6B"/>
+                            <stop offset="100%" stop-color="#152C6E"/>
+                        </linearGradient>
+                        <linearGradient id="laptopGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%"  stop-color="#F39140"/>
+                            <stop offset="100%" stop-color="#DB7A2A"/>
+                        </linearGradient>
+                        <linearGradient id="chairGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%"  stop-color="#0D2A6B"/>
+                            <stop offset="100%" stop-color="#0A2056"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Cream background circle blob -->
+                    <ellipse cx="260" cy="260" rx="230" ry="200" fill="#FCE9CE" opacity="0.55"/>
+
+                    <!-- Halftone dots inside blob -->
+                    <g fill="#F39140" opacity="0.35">
+                        <circle cx="90"  cy="180" r="2"/>
+                        <circle cx="110" cy="220" r="2"/>
+                        <circle cx="130" cy="260" r="2"/>
+                        <circle cx="410" cy="200" r="2"/>
+                        <circle cx="430" cy="240" r="2"/>
+                        <circle cx="450" cy="280" r="2"/>
+                        <circle cx="150" cy="130" r="2"/>
+                        <circle cx="390" cy="130" r="2"/>
+                        <circle cx="260" cy="90"  r="2"/>
+                    </g>
+
+                    <!-- Desk shadow -->
+                    <ellipse cx="260" cy="440" rx="200" ry="14" fill="#0D2A6B" opacity="0.10"/>
+
+                    <!-- Desk surface -->
+                    <rect x="80" y="380" width="360" height="10" rx="3" fill="#0D2A6B"/>
+                    <rect x="80" y="390" width="360" height="18" fill="#0D2A6B" opacity="0.85"/>
+
+                    <!-- Chair back -->
+                    <rect x="330" y="290" width="90" height="120" rx="12" fill="url(#chairGrad)"/>
+                    <rect x="345" y="405" width="60" height="10" fill="#0A2056"/>
+
+                    <!-- Character body -->
+                    <g class="dev-char">
+                        <!-- Torso (t-shirt) -->
+                        <path d="M195 260 Q260 240 325 260 L335 385 L185 385 Z" fill="#F39140"/>
+                        <!-- Shirt collar -->
+                        <path d="M240 258 Q260 275 280 258 L275 246 Q260 252 245 246 Z" fill="#0D2A6B"/>
+
+                        <!-- Neck -->
+                        <rect x="248" y="228" width="24" height="20" fill="#E8B48A"/>
+
+                        <!-- Head -->
+                        <ellipse cx="260" cy="205" rx="36" ry="40" fill="#E8B48A"/>
+                        <!-- Hair -->
+                        <path d="M226 195 Q222 158 260 156 Q298 158 294 195 Q292 175 260 170 Q228 175 226 195 Z" fill="#1a1a2e"/>
+                        <!-- Sideburn shading -->
+                        <path d="M226 195 Q225 210 234 220 L232 205 Z" fill="#1a1a2e" opacity="0.7"/>
+                        <path d="M294 195 Q295 210 286 220 L288 205 Z" fill="#1a1a2e" opacity="0.7"/>
+
+                        <!-- Eyes -->
+                        <circle cx="246" cy="208" r="2.2" fill="#1a1a2e"/>
+                        <circle cx="274" cy="208" r="2.2" fill="#1a1a2e"/>
+                        <!-- Eyebrows -->
+                        <rect x="240" y="200" width="12" height="1.6" rx="0.8" fill="#1a1a2e"/>
+                        <rect x="268" y="200" width="12" height="1.6" rx="0.8" fill="#1a1a2e"/>
+                        <!-- Smile -->
+                        <path d="M252 222 Q260 228 268 222" stroke="#1a1a2e" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+                        <!-- Headphones -->
+                        <path d="M220 200 Q220 165 260 165 Q300 165 300 200" stroke="#0D2A6B" stroke-width="6" fill="none"/>
+                        <rect x="214" y="196" width="12" height="20" rx="3" fill="#0D2A6B"/>
+                        <rect x="294" y="196" width="12" height="20" rx="3" fill="#0D2A6B"/>
+
+                        <!-- Left arm reaching laptop -->
+                        <path d="M195 265 Q170 300 195 340 L215 335 Q205 305 220 275 Z" fill="#F39140"/>
+                        <!-- Right arm -->
+                        <path d="M325 265 Q350 300 325 340 L305 335 Q315 305 300 275 Z" fill="#F39140"/>
+
+                        <!-- Hands -->
+                        <ellipse cx="205" cy="345" rx="12" ry="9" fill="#E8B48A"/>
+                        <ellipse cx="315" cy="345" rx="12" ry="9" fill="#E8B48A"/>
+                    </g>
+
+                    <!-- Laptop -->
+                    <g class="dev-laptop">
+                        <!-- Screen back -->
+                        <rect x="165" y="280" width="190" height="120" rx="8" fill="#0D2A6B"/>
+                        <!-- Screen -->
+                        <rect x="175" y="290" width="170" height="100" rx="4" fill="url(#screenGrad)"/>
+                        <!-- Code lines -->
+                        <g class="code-lines">
+                            <rect x="184" y="302" width="28" height="4" rx="2" fill="#F39140"/>
+                            <rect x="216" y="302" width="60" height="4" rx="2" fill="#7CB0E8"/>
+                            <rect x="184" y="314" width="18" height="4" rx="2" fill="#7CB0E8"/>
+                            <rect x="206" y="314" width="46" height="4" rx="2" fill="#B5E3B5"/>
+                            <rect x="256" y="314" width="30" height="4" rx="2" fill="#F39140"/>
+                            <rect x="192" y="326" width="80" height="4" rx="2" fill="#B5E3B5"/>
+                            <rect x="184" y="338" width="36" height="4" rx="2" fill="#F39140"/>
+                            <rect x="224" y="338" width="50" height="4" rx="2" fill="#7CB0E8"/>
+                            <rect x="192" y="350" width="66" height="4" rx="2" fill="#B5E3B5"/>
+                            <rect x="262" y="350" width="20" height="4" rx="2" fill="#F39140"/>
+                            <rect x="184" y="362" width="22" height="4" rx="2" fill="#F39140"/>
+                            <rect x="210" y="362" width="70" height="4" rx="2" fill="#fff" opacity="0.85"/>
+                            <!-- Cursor -->
+                            <rect class="cursor" x="288" y="362" width="6" height="6" fill="#fff"/>
+                        </g>
+                        <!-- Laptop base -->
+                        <path d="M155 400 L365 400 L380 415 L140 415 Z" fill="url(#laptopGrad)"/>
+                        <rect x="240" y="404" width="40" height="4" rx="2" fill="#fff" opacity="0.5"/>
+                    </g>
+
+                    <!-- Coffee cup -->
+                    <g class="dev-coffee">
+                        <path d="M100 370 L105 400 Q106 408 115 408 L138 408 Q147 408 148 400 L153 370 Z" fill="#fff"/>
+                        <rect x="100" y="370" width="53" height="6" fill="#F39140"/>
+                        <path d="M153 380 Q170 382 170 395 Q170 405 153 405" stroke="#fff" stroke-width="3" fill="none"/>
+                        <!-- Steam -->
+                        <path class="steam s1" d="M120 360 Q125 350 118 340 Q112 330 120 320" stroke="#F39140" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+                        <path class="steam s2" d="M132 360 Q137 350 130 340 Q124 330 132 320" stroke="#F39140" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- Small decorative sparkles -->
+                    <g class="sparkles" fill="#F39140">
+                        <path d="M60 100 L63 108 L71 111 L63 114 L60 122 L57 114 L49 111 L57 108 Z"/>
+                        <path d="M460 340 L462 346 L468 348 L462 350 L460 356 L458 350 L452 348 L458 346 Z" opacity="0.8"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Crossed skills ribbons -->
+        <div class="skills-ribbons" aria-hidden="false">
+            <div class="ribbon ribbon-cream">
+                <div class="ribbon-track">
+                    <!-- duplicated for seamless marquee -->
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="dot"></i>SPRINGBOOT</span>
+                    <span class="ribbon-item"><i class="star">✦</i>GIT</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="star">✦</i>DOCKER</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <!-- repeat -->
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="dot"></i>SPRINGBOOT</span>
+                    <span class="ribbon-item"><i class="star">✦</i>GIT</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                    <span class="ribbon-item"><i class="star">✦</i>DOCKER</span>
+                    <span class="ribbon-item"><i class="dot"></i>SKILLS</span>
+                </div>
+            </div>
+
+            <div class="ribbon ribbon-orange">
+                <div class="ribbon-track reverse">
+                    <span class="ribbon-item"><i class="star">✦</i>JAVA</span>
+                    <span class="ribbon-item"><i class="star">✦</i>ANGULAR</span>
+                    <span class="ribbon-item"><i class="star">✦</i>PL / SQL</span>
+                    <span class="ribbon-item"><i class="star">✦</i>DOCKER</span>
+                    <span class="ribbon-item"><i class="star">✦</i>SPRINGBOOT</span>
+                    <span class="ribbon-item"><i class="star">✦</i>GIT</span>
+                    <!-- repeat -->
+                    <span class="ribbon-item"><i class="star">✦</i>JAVA</span>
+                    <span class="ribbon-item"><i class="star">✦</i>ANGULAR</span>
+                    <span class="ribbon-item"><i class="star">✦</i>PL / SQL</span>
+                    <span class="ribbon-item"><i class="star">✦</i>DOCKER</span>
+                    <span class="ribbon-item"><i class="star">✦</i>SPRINGBOOT</span>
+                    <span class="ribbon-item"><i class="star">✦</i>GIT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+        <div class="doodle doodle-spring spring-about" aria-hidden="true"></div>
+        <div class="doodle doodle-dashed dashed-about" aria-hidden="true"></div>
+        <div class="doodle doodle-star star-about-1" aria-hidden="true">✦</div>
+        <div class="doodle doodle-star star-about-2" aria-hidden="true">✦</div>
+
+        <div class="container about-inner">
+            <div class="about-image" data-aos="fade-right">
+                <div class="about-image-wrap">
+                    <div class="halftone"></div>
+                    <img src="assets/profile-about.png" alt="Selvasarukesh - About" />
+                </div>
+            </div>
+
+            <div class="about-text" data-aos="fade-left">
+                <h3 class="section-eyebrow">ABOUT</h3>
+                <h2 class="section-title">
+                    Senior Full Stack Developer |<br />
+                    Java &amp; Spring Boot | Angular Developer
+                </h2>
+                <p class="about-lead">
+                    Results-driven Senior Full Stack Developer with 3.5+ Years of Experience
+                </p>
+
+                <div class="about-card">
+                    Expertise in Java 8/17, TypeScript, JavaScript (ES6+), HTML5, CSS3, and PL/SQL.
+                    Proficient in Spring Boot, Spring MVC, Spring Security, Spring Data JPA,
+                    Hibernate, and Angular 15. Skilled in Oracle, PostgreSQL, RESTful APIs,
+                    Microservices Architecture, and JWT Authentication. Experienced with Git,
+                    Docker, Red Hat OpenShift, AWS (EC2, S3), GitHub Copilot, and CI/CD practices.
+                    Passionate about building scalable, enterprise-grade solutions with clean,
+                    maintainable code.
+                </div>
+
+                <a href="assets/resume.pdf" download class="btn btn-primary">
+                    DOWNLOAD CV <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="experience">
+        <div class="doodle doodle-dashed dashed-exp-1" aria-hidden="true"></div>
+        <div class="doodle doodle-dashed dashed-exp-2" aria-hidden="true"></div>
+        <div class="doodle doodle-star star-exp" aria-hidden="true">✦</div>
+        <div class="doodle cloud-code" aria-hidden="true">
+            <i class="fa-solid fa-cloud"></i>
+            <span>&lt;/&gt;</span>
+        </div>
+
+        <div class="container">
+            <h2 class="section-title-orange">EXPERIENCE</h2>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <span class="code-tag">&lt;/&gt;</span>
+                        <span class="t-date">JUN 2023 - PRESENT</span>
+                    </div>
+                    <div class="timeline-card">
+                        <h3 class="t-role">SENIOR SOFTWARE DEVELOPER</h3>
+                        <p class="t-company">BAJAJ LIFE INSURANCE, PUNE</p>
+                        <ul>
+                            <li>Leading and managing end-to-end delivery of critical projects: Payment Gateway, Mandate, Penny Drop, AutoPay Transaction and Omni Docs.</li>
+                            <li>Architected and maintained end-to-end Payment Gateway workflows processing 50,000+ transactions per month, ensuring 99.9% uptime and zero critical failures. Led performance optimization reducing average transaction processing time by 35%.</li>
+                            <li>Engineered mandate registration, transaction validation, and receipt generation modules with full compliance, security, and audit trail support.</li>
+                            <li>Collaborated with cross-functional teams across 6+ concurrent applications using Angular, Java 8, and Spring Boot, serving thousands of users daily.</li>
+                            <li>Built and integrated RESTful APIs for insurance policy management workflows, improving data accuracy and reducing processing errors.</li>
+                            <li>Deployed and managed applications on Red Hat OpenShift; configured servers on Tomcat 9 and WebLogic 12c; contributed to CI/CD pipeline improvements and leveraged GitHub Copilot to improve development speed and code quality.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <span class="code-tag">&lt;/&gt;</span>
+                        <span class="t-date">SEP 2022 - JUN 2023</span>
+                    </div>
+                    <div class="timeline-card">
+                        <h3 class="t-role">INTERN - SOFTWARE DEVELOPER</h3>
+                        <p class="t-company">BAJAJ LIFE INSURANCE, COIMBATORE</p>
+                        <ul>
+                            <li>Gained hands-on experience in enterprise Java/J2EE development, contributing to real-time insurance application modules.</li>
+                            <li>Developed foundational skills in Spring Boot, Angular, and Oracle DB within a structured corporate IT environment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="portfolio" class="projects">
+        <div class="doodle doodle-dashed-light dashed-proj-1" aria-hidden="true"></div>
+        <div class="doodle doodle-dashed-light dashed-proj-2" aria-hidden="true"></div>
+        <div class="proj-arrow proj-arrow-left" aria-hidden="true">&lt;&gt;</div>
+        <div class="proj-arrow proj-arrow-right" aria-hidden="true">&lt;&gt;</div>
+
+        <div class="container">
+            <h2 class="section-title-orange">PROJECTS</h2>
+            <p class="proj-subtitle">Showcasing Innovation in Software Development</p>
+
+            <div class="proj-grid">
+                <button type="button" class="proj-card" data-project="bloodsecure" data-aos="zoom-in">
+                    <div class="proj-illustration proj-illu-1">
+                        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="0" y="0" width="200" height="140" fill="#E8F4FB" rx="8"/>
+                            <circle cx="160" cy="40" r="22" fill="#cfe7f5"/>
+                            <circle cx="40" cy="110" r="28" fill="#ffd8b5"/>
+                            <path d="M100 30 C 85 60, 80 80, 100 95 C 120 80, 115 60, 100 30 Z" fill="#E74C3C"/>
+                            <rect x="92" y="55" width="16" height="4" fill="#fff"/>
+                            <rect x="98" y="49" width="4" height="16" fill="#fff"/>
+                            <rect x="135" y="80" width="40" height="40" fill="#F39140" rx="4"/>
+                            <rect x="148" y="85" width="14" height="30" fill="#fff"/>
+                            <rect x="140" y="93" width="30" height="14" fill="#fff"/>
+                            <rect x="70" y="60" width="14" height="30" fill="#fff" stroke="#0D2A6B" stroke-width="2" rx="2"/>
+                            <rect x="70" y="78" width="14" height="12" fill="#E74C3C"/>
+                        </svg>
+                    </div>
+                    <h3 class="proj-title">BLOODSECURE MANAGEMENT</h3>
+                    <span class="proj-view">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+
+                <button type="button" class="proj-card" data-project="payment" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="proj-illustration proj-illu-2">
+                        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="0" y="0" width="200" height="140" fill="#E8F4FB" rx="8"/>
+                            <rect x="70" y="25" width="60" height="100" rx="8" fill="#0D2A6B"/>
+                            <rect x="76" y="35" width="48" height="70" fill="#fff" rx="4"/>
+                            <rect x="80" y="55" width="40" height="22" rx="3" fill="#F39140"/>
+                            <rect x="82" y="60" width="10" height="6" fill="#fff" opacity="0.7"/>
+                            <rect x="82" y="68" width="20" height="3" fill="#fff" opacity="0.5"/>
+                            <circle cx="40" cy="50" r="14" fill="#F39140" stroke="#c66f1c" stroke-width="2"/>
+                            <text x="40" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">$</text>
+                            <circle cx="160" cy="60" r="12" fill="#F39140" stroke="#c66f1c" stroke-width="2"/>
+                            <text x="160" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">$</text>
+                            <circle cx="155" cy="100" r="10" fill="#F39140" stroke="#c66f1c" stroke-width="2"/>
+                            <text x="155" y="104" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">$</text>
+                        </svg>
+                    </div>
+                    <h3 class="proj-title">PAYMENT GATEWAY AND MANDATES</h3>
+                    <span class="proj-view">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+
+                <button type="button" class="proj-card" data-project="associate360" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="proj-illustration proj-illu-3">
+                        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="0" y="0" width="200" height="140" fill="#E8F4FB" rx="8"/>
+                            <circle cx="60" cy="55" r="14" fill="#0D2A6B"/>
+                            <rect x="44" y="70" width="32" height="40" rx="6" fill="#F39140"/>
+                            <circle cx="100" cy="50" r="16" fill="#0D2A6B"/>
+                            <rect x="82" y="68" width="36" height="44" rx="6" fill="#0D2A6B"/>
+                            <circle cx="140" cy="55" r="14" fill="#0D2A6B"/>
+                            <rect x="124" y="70" width="32" height="40" rx="6" fill="#F39140"/>
+                        </svg>
+                    </div>
+                    <h3 class="proj-title">ASSOCIATE 360 - EMS</h3>
+                    <span class="proj-view">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+
+                <button type="button" class="proj-card" data-project="pennydrop" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="proj-illustration proj-illu-4">
+                        <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="0" y="0" width="200" height="140" fill="#E8F4FB" rx="8"/>
+                            <!-- Bank building -->
+                            <rect x="60" y="50" width="80" height="60" fill="#0D2A6B"/>
+                            <polygon points="55,50 145,50 100,25" fill="#F39140"/>
+                            <rect x="70" y="65" width="8" height="45" fill="#fff"/>
+                            <rect x="86" y="65" width="8" height="45" fill="#fff"/>
+                            <rect x="106" y="65" width="8" height="45" fill="#fff"/>
+                            <rect x="122" y="65" width="8" height="45" fill="#fff"/>
+                            <rect x="50" y="108" width="100" height="6" fill="#0D2A6B"/>
+                            <!-- Coin dropping -->
+                            <circle cx="35" cy="60" r="10" fill="#F39140" stroke="#c66f1c" stroke-width="2"/>
+                            <text x="35" y="64" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">₹</text>
+                            <circle cx="170" cy="80" r="8" fill="#F39140" stroke="#c66f1c" stroke-width="2"/>
+                            <text x="170" y="83" text-anchor="middle" font-size="8" font-weight="bold" fill="#fff">₹</text>
+                            <!-- Check mark -->
+                            <circle cx="100" cy="82" r="10" fill="#B5E3B5"/>
+                            <path d="M96 82 L99 85 L104 79" stroke="#0D2A6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="proj-title">PENNYDROP - BANK VERIFY</h3>
+                    <span class="proj-view">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+        <div class="doodle doodle-spring spring-contact" aria-hidden="true"></div>
+        <div class="doodle doodle-dashed dashed-contact" aria-hidden="true"></div>
+
+        <div class="container contact-inner">
+            <h2 class="section-eyebrow contact-eyebrow">SEND ME A MESSAGE !</h2>
+            <p class="contact-sub">
+                Got a question or proposal, or just want<br />to say hello? Go ahead.
+            </p>
+
+            <div class="contact-info">
+                <a href="mailto:selvasarukesh.k@gmail.com" class="contact-info-item">
+                    <span class="contact-info-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <span class="contact-info-text">selvasarukesh.k@gmail.com</span>
+                </a>
+                <a href="tel:+916384066040" class="contact-info-item">
+                    <span class="contact-info-icon"><i class="fa-solid fa-phone"></i></span>
+                    <span class="contact-info-text">+91 63840 66040</span>
+                </a>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                    </div>
+                </div>
+
+                <div class="form-group full">
+                    <label for="message">Your Message</label>
+                    <input type="text" id="message" name="message" placeholder="Write you message to me..." required />
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    SEND MESSAGE <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <p class="form-status" id="formStatus" role="status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="doodle doodle-star star-footer" aria-hidden="true">✦</div>
+        <div class="doodle doodle-dashed dashed-footer" aria-hidden="true"></div>
+
+        <div class="container footer-inner">
+            <h3 class="footer-logo">SELVASARUKESH</h3>
+            <p class="footer-tag">Living, learning, &amp; leveling up one day at a time.</p>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/selvasarukesh-k/" target="_blank" rel="noopener" class="social-tile" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/selvasarukesh-k" target="_blank" rel="noopener" class="social-tile" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/selvasarukesh/" target="_blank" rel="noopener" class="social-tile" aria-label="LeetCode">
+                    <i class="fa-solid fa-code"></i>
+                </a>
+                <a href="mailto:selvasarukesh.k@gmail.com" class="social-tile" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- <p class="footer-copy">Copyright @selvasarukesh.k@gmail.com</p> -->
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div class="modal-overlay" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal" role="document">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-hero">
+                <div class="modal-illustration" id="modalIllustration" aria-hidden="true"></div>
+                <div class="modal-hero-doodles" aria-hidden="true">
+                    <span class="modal-star">✦</span>
+                    <span class="modal-star modal-star-2">✦</span>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <span class="modal-tag" id="modalTag">PROJECT</span>
+                <h3 class="modal-title" id="modalTitle">Project Title</h3>
+                <p class="modal-subtitle" id="modalSubtitle">Project subtitle</p>
+
+                <div class="modal-tech" id="modalTech" aria-label="Tech stack"></div>
+
+                <div class="modal-description" id="modalDescription"></div>
+
+                <div class="modal-highlights">
+                    <h4 class="modal-section-title">Key Highlights</h4>
+                    <ul id="modalHighlights"></ul>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="#contact" class="btn btn-primary modal-cta" id="modalCta">
+                        DISCUSS PROJECT <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
